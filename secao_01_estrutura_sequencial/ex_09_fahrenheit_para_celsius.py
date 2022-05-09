@@ -16,6 +16,11 @@ Mostrar apenas valor inteiro da temperatura
 
 """
 
+from math import floor
+
 
 def transformar_para_celsius():
     """Escreva aqui em baixo a sua solução"""
+    fahrenheit = float(input('Digite a temperatura em Fahrenheit: '))
+    celsius = 5 * ((fahrenheit - 32) / 9)
+    print(f'Essa temperatura é de {floor(celsius)} Celsius')

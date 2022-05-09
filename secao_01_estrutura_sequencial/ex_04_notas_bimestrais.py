@@ -15,4 +15,7 @@ Faça um Programa que peça as 4 notas bimestrais e mostre a média.
 
 def calcular_media():
     """Escreva aqui em baixo a sua solução"""
-
+    notas = []
+    for c, _ in enumerate(range(4), start=1):
+        notas.append(float(input(f'Digite a {c} nota: ')))
+    print(f'A média anual é {sum(notas) / c}')
